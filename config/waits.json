@@ -1,0 +1,7 @@
+{
+    "defaultWait": 30,
+    "longWait": 60,
+    "smallWait": 10,
+    "interactionsWait": 5,
+    "sec": 1
+}
