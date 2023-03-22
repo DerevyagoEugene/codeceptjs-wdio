@@ -1,0 +1,27 @@
+{
+    "name": "codeceptjs-tests",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "launch": "npx kill-port 4444 -y && npx codeceptjs run --features",
+        "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "codeceptjs:ui": "codecept-ui --app",
+        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples/codecept.webdriver.conf.js",
+        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples/codecept.webdriver.conf.js",
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples/codecept.webdriver.conf.js"
+    },
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.10.0",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/ui": "^0.5.0",
+        "@types/chai": "^4.3.4",
+        "@types/jquery": "^3.5.16",
+        "@types/node": "^18.15.5",
+        "@wdio/selenium-standalone-service": "^7.30.0",
+        "codeceptjs": "^3.4.1",
+        "ts-node": "^10.9.1",
+        "typescript": "^4.9.5",
+        "webdriverio": "^8.6.7"
+    }
+}
