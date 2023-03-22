@@ -14,4 +14,3 @@ Feature: Avia Sales
       
       Then Print the fastes route to
       And Print the fastest route from
-       
